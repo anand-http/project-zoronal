@@ -65,8 +65,6 @@ export default function AddReviewModal({ isOpen, onClose, companyName }) {
 
             setErrors({});
             onClose();
-            window.location.reload();
-
         } catch (error) {
             setErrors({
                 submit:

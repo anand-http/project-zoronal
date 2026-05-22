@@ -41,12 +41,11 @@ const addReview = async (req, res) => {
       imageUrl
     });
 
-    // Recalculate averageRating and reviewCount on the company
     const allReviews = await Review.find({ company: req.params.id });
     const avg =
       allReviews.reduce((sum, r) => sum + r.rating, 0) / allReviews.length;
 
-    company.averageRating = Math.round(avg * 10) / 10; // e.g. 4.5
+    company.averageRating = Math.round(avg * 10) / 10;
     company.reviewCount = allReviews.length;
     await company.save();
 

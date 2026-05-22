@@ -37,7 +37,7 @@ export default function CompanyDetail() {
       }
     }
     getReviews();
-  }, [id]);
+  }, [id,isAddReviewOpen]);
  
   if(isLoading) return <Loading/>
 
