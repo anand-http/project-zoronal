@@ -12,7 +12,7 @@ connectDb();
 
 
 app.use(cors({
-    origin: "https://project-zoronal.vercel.app",
+    origin: ["https://project-zoronal.vercel.app", "http://localhost:5173"],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));

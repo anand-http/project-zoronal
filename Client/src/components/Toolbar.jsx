@@ -3,7 +3,7 @@ const Toolbar = ({ city, setCity, sortBy, setSortBy, onAddCompany }) => {
     <div className="flex flex-wrap items-end gap-10 mb-5">
       <div className="flex flex-col gap-1">
         <label className="text-sm text-gray-600">Select City</label>
-        <div className="flex items-center bg-white border border-gray-300 rounded-lg overflow-hidden w-100">
+        <div className="flex items-center bg-white border border-gray-300 rounded-lg overflow-hidden w-88">
           <input
             type="text"
             value={city}

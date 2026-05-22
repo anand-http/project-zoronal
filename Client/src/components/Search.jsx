@@ -1,6 +1,6 @@
 const NavSearch = () => {
   return (
-    <div className="flex-1 h-9 max-w-3xl min-w-md bg-white rounded-md overflow-hidden flex items-center border border-gray-300">
+    <div className="flex-1 h-9 max-w-3xl min-w-sm bg-white rounded-md overflow-hidden flex items-center border border-gray-300">
         <input
           type="text"
           placeholder="Search..."
