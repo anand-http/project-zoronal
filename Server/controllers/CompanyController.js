@@ -47,7 +47,6 @@ const getCompanyById = async (req, res) => {
 
 // POST /api/companies
 const addCompany = async (req, res) => {
-    console.log("Received request to add company:", req.body);
   try {
     const { name, address, city, foundedDate } = req.body;
 

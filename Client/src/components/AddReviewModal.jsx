@@ -57,7 +57,6 @@ export default function AddReviewModal({ isOpen, onClose, companyName }) {
                     },
                 });
 
-            console.log(response.data);
             
             // Reset Form
             setFormData({

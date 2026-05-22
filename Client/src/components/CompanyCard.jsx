@@ -3,7 +3,6 @@ import CompanyLogo from "./CompanyLogo";
 import StarRating from "./StarRating";
 
 const CompanyCard = ({ company }) => {
-  console.log(company);
   return (
     <div className="bg-white border border-gray-200 rounded-xl p-4 flex items-center gap-4 shadow-sm hover:shadow-md transition-shadow">
       <CompanyLogo bg={company.logobg} />

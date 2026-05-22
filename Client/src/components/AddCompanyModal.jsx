@@ -65,7 +65,6 @@ export default function AddCompanyModal({ isOpen, onClose }) {
       }
     );
 
-    console.log(response.data);
     setFormData({
       logobg: "",
       name: "",

@@ -49,7 +49,6 @@ function ReviewBody({ text }) {
 
 // Main sub-component: one full review card
 export function ReviewCard({ review }) {
-  console.log("review",review);
   return (
     <div className="bg-white border border-gray-200 rounded-xl px-5 py-4 shadow-sm">
       <div className="flex items-start justify-between">
