@@ -14,7 +14,7 @@ const Home = () => {
     const [isAddCompanyOpen, setIsAddCompanyOpen] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
 
-    const baseUrl = "http://localhost:5000/api/v1";
+    const baseUrl = "https://project-zoronal.onrender.com/api/v1";
 
     useEffect(() => {
       const getCompanies = async () => {
@@ -59,7 +59,7 @@ const Home = () => {
                     ) : (
                         <div className="flex flex-col items-center gap-3 py-30">
                             <h1 className="text-2xl font-bold text-gray-700">
-                               No companies found in {city}
+                               No companies found {city && `in ${city}`}
                             </h1>
                             </div>
                     )}

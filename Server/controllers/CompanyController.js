@@ -1,4 +1,4 @@
-import Company from "../models/company.js";
+import Company from "../models/Company.js";
 
 // GET /api/companies?city=Indore&sort=name
 const getCompanies = async (req, res) => {

@@ -1,5 +1,5 @@
-import Review from "../models/review.js";
-import Company from "../models/company.js";
+import Review from "../models/Review.js";
+import Company from "../models/Company.js";
 
 // GET /api/companies/:id/reviews
 const getReviewsByCompany = async (req, res) => {

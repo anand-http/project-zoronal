@@ -30,7 +30,7 @@ export default function AddReviewModal({ isOpen, onClose, companyName }) {
         return newErrors;
     };
 
-    const baseUrl = "http://localhost:5000/api/v1";
+    const baseUrl = "https://project-zoronal.onrender.com/api/v1";
     const handleReviewSubmit = async (e) => {
         e.preventDefault();
         const newErrors = validateForm();
@@ -49,16 +49,14 @@ export default function AddReviewModal({ isOpen, onClose, companyName }) {
             data.append("rating", formData.rating);
             data.append("body", formData.body);
 
-            // API Call
-            const response = await axios.post(
-                `${baseUrl}/reviews/add-review/${id}`, data,{
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                });
+            await axios.post(
+               `${baseUrl}/reviews/add-review/${id}`, data,{
+                   headers: {
+                       "Content-Type": "application/json",
+                   },
+               });
 
             
-            // Reset Form
             setFormData({
                 name: "",
                 rating: 5,

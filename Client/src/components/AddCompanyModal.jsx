@@ -30,7 +30,7 @@ export default function AddCompanyModal({ isOpen, onClose }) {
     return newErrors;
   };
 
-  const baseUrl = "http://localhost:5000/api/v1";
+  const baseUrl = "https://project-zoronal.onrender.com/api/v1";
   const handleSubmit = async (e) => {
   e.preventDefault();
 

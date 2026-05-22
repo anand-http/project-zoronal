@@ -13,7 +13,7 @@ export default function CompanyDetail() {
   const [company, setCompany] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  const baseUrl = "http://localhost:5000/api/v1";
+  const baseUrl = "https://project-zoronal.onrender.com/api/v1";
 
   useEffect(() => {
     const getCompaniesById = async () => {
