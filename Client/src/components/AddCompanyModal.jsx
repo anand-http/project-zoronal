@@ -55,7 +55,7 @@ export default function AddCompanyModal({ isOpen, onClose }) {
       data.append("logobg", formData.logobg);
     }
   
-    const response = await axios.post(
+    await axios.post(
       `${baseUrl}/companies/add-company`,
       data,
       {

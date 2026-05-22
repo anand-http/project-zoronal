@@ -51,7 +51,7 @@ const addCompany = async (req, res) => {
     const { name, address, city, foundedDate } = req.body;
 
     const imageUrl = req.file
-    ? `/uploads/${req.file.filename}`
+    ? req.file.path
     : null;
 
     const existing = await Company.findOne({ name: { $regex: `^${name}$`, $options: "i" } });

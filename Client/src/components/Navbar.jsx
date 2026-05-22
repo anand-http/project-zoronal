@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import NavSearch from "./Navbar/Search";
+import NavSearch from "./Search";
 
 const Navbar = () => {
   return (
